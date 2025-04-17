@@ -1,13 +1,87 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: sans-serif, monospace;
+}
+.card {
+  /* width: 50%; */
+  border-radius: 1rem;
+  border: 1px solid grey;
+  height: 26rem;
+}
+.image {
+  /* border-radius: 1rem; */
+  position: relative;
+  height: 12rem;
+  border-radius: 0.5rem;
+}
+img {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* Space between images */
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem;
+}
+.card:hover {
+  box-shadow: 5px 4px 10px gray;
+  cursor: pointer;
+}
+.App {
+  width: 73%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  border: 2px dotted blue;
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.reset {
+  font-size: 3rem;
+  border: 2px dotted blue;
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardDetails {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  background-color: #e7e7e7;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.reset-center{
+  text-align: center;
 }
